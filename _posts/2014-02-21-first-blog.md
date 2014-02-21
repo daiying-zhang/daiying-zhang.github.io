@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 新博客的第一篇文章
-categofy:article
+category: article
 ---
 
 博客已经迁移到GitHub。
