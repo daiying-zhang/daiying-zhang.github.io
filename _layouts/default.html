@@ -19,7 +19,7 @@
     <div class="post">
         <h1>{{ page.title }}</h1>
         <p class="description">
-            <time pubdate="{{ post.date | date_to_utc | date: '%Y-%m-%d' }}">{{ post.date | date_to_utc | date: "%Y-%m-%d" }}</time>
+            <time pubdate="{{ page.date | date_to_utc | date: '%Y-%m-%d' }}">{{ page.date | date_to_utc | date: "%Y-%m-%d" }}</time>
         </p>
         {{ content }}
     </div>
