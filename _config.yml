@@ -1,4 +1,4 @@
-baseurl: /blog
+baseurl: /
 title : ImFee
 description: I'm Front End Engineer
 paginate: 15
@@ -6,8 +6,8 @@ paginate: 15
 #导航
 navs :
   - text : Index
-    url  : /blog/
+    url  : /
   - text : Snippets
-    url  : /blog/snippets.html
+    url  : /snippets.html
   - text : Plugins
-    url  : /blog/plugins.html
+    url  : /plugins.html
