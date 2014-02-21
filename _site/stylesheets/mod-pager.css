@@ -1,0 +1,9 @@
+/**
+ * @fileOverview 分页
+ * @author daiying.zhang
+ */
+
+.mod-pager{background: #f6f6f6;padding: 25px 0 25px 5px;}
+.mod-pager .content{max-width: 840px; margin: 0 auto; }
+.mod-pager .content .link{display:inline-block; width:30px; height:30px; margin: 0 5px 0 0; border-radius: 4px; line-height:30px; text-align:center; color:#ffffff; background: #0088CC}
+.mod-pager .content .link.disable{background: #313131}

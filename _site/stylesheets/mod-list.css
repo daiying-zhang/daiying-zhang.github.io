@@ -1,0 +1,15 @@
+/**
+ * @fileOverview 文章列表模块
+ * @author daiying.zhang
+ */
+
+.mod-list{min-height:600px;background: #ffffff;}
+.mod-list ul{padding:0}
+.mod-list ul li{list-style:none; margin: 0 0 -15px 0;}
+.mod-list ul li:nth-child(2n){background: #f6f6f6;}
+.mod-list ul li:nth-child(2n+1){}
+.mod-list .post{max-width:840px; margin:0 auto;padding-bottom: 90px;}
+.mod-list .post h2{padding: 60px 0 20px;margin: 0;}
+.mod-list .post .read-more{background: #0080C8;display:inline-block;padding:1px 8px; border-radius:4px}
+.mod-list .post .read-more a{color: #ffffff;}
+.mod-list .description{color: #A7AAB1;}

@@ -1,0 +1,26 @@
+---
+layout: index
+title: 插件列表 - 简洁 - 轻量
+description: 我的插件列表，追求简洁、轻量。好的插件，不需要太复杂！
+name: plugins
+---
+
+<!--分类：{{ page.name }}
+文章数：{{ site.categories[page.name] | size }}-->
+<ul>
+{% for post in site.categories[page.name] %}
+<li>
+    <div class="post">
+        <h2>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </h2>
+        <p class="description">
+            <time pubdate="{{ post.date | date_to_utc | date: '%Y-%m-%d' }}">{{ post.date | date_to_utc | date: "%Y-%m-%d" }}</time>
+        </p>
+        <p>
+            {{ post.excerpt  | strip_html | truncate: 500 }}
+        </p>
+    </div>
+</li>
+{% endfor %}
+</ul>

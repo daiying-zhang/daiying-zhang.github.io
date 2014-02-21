@@ -1,0 +1,26 @@
+---
+layout: snippets-list
+title: 代码片段 - 积累 - 沉淀
+description: 我的代码片段，积累Coding旅途中有用的点点滴滴，慢慢沉淀...
+name: snippets
+---
+
+<!--分类：{{ page.name }}
+文章数：{{ site.categories[page.name] | size }}-->
+<ul>
+    {% for post in site.categories[page.name] %}
+    <li>
+        <div class="post">
+            <h2>
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            </h2>
+            <p class="description">
+                <time pubdate="{{ post.date | date_to_utc | date: '%Y-%m-%d' }}">{{ post.date | date_to_utc | date: "%Y-%m-%d" }}</time>
+            </p>
+            <p>
+                {{ post.excerpt | strip_html | truncate: 500 }}
+            </p>
+        </div>
+    </li>
+    {% endfor %}
+</ul>

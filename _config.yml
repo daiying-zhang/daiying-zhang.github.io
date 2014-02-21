@@ -1,0 +1,13 @@
+baseurl: /blog
+title : ImFee
+description: I'm Front End Engineer
+paginate: 15
+
+#导航
+navs :
+  - text : Index
+    url  : /blog/
+  - text : Snippets
+    url  : /blog/snippets.html
+  - text : Plugins
+    url  : /blog/plugins.html
