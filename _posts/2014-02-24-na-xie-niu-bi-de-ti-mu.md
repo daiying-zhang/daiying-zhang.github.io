@@ -4,9 +4,8 @@ title: 那些牛逼的题目
 category: article
 ---
 
-### 关于this指向
 
-#### T1
+## T1
 
     <script>
         var length = 10;
@@ -20,8 +19,16 @@ category: article
             alert(this.length)
         }, length);
 
-
-
         //答案
         //10,2
+    </script>
+    
+## T2
+
+    <script>
+        var f = {};
+        f.c = f = [];
+        console.log(f.c);
+        //答案
+        //undefined
     </script>
