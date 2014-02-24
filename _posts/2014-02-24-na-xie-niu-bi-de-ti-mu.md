@@ -1,9 +1,10 @@
 ---
 layout: default
-title: 那些牛逼的题目
-category: article
+title: 那些牛逼的题目[收集]
+category: snippets
 ---
 
+这里会收集一些比较“深奥”的题目，争取把其中的原因弄懂。
 
 ## T1
 
