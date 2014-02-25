@@ -5,7 +5,7 @@ pre{
     padding:10px 10px 10px 42px;
     border:1px #CCC solid;
     background:#F9F9F9;
-    color:#000066;
+    /*color:#000066;*/
     overflow-x: auto;
     position: relative;
     word-wrap: normal;
