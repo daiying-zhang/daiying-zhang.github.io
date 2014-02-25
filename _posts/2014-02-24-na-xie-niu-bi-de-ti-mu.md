@@ -61,4 +61,33 @@ category: snippets
         //undefined
     </script>
     
-持续更新中...
+> The production AssignmentExpression : LeftHandSideExpression = AssignmentExpression is evaluated as follows:  
+>    1. Let lref be the result of evaluating LeftHandSideExpression.  
+>    2. Let rref be the result of evaluating AssignmentExpression.  
+>    3. Let rval be GetValue(rref).  
+>    4. Throw a SyntaxError exception if the following conditions are all true:  
+>        * Type(lref) is Reference is true  
+>        * IsStrictReference(lref) is true  
+>        * Type(GetBase(lref)) is Environment Record  
+>        *GetReferencedName(lref) is either "eval" or "arguments"  
+>    5. Call PutValue(lref, rval).  
+>    6. Return rval.   
+
+上面是ECMA262中得内容，从上面的规定可以看出：
+    * 先把<code>f.c</code>解析成<code>reference</code>：<code>lref</code>
+    * <code>rval</code>的值为执行<code>f=[]</code>的返回值<code>[]</code>,此时<code>f</code>已经不再指向<code>{}</code>了
+    * 再将<code>rval</code>赋给<code>lref</code>
+
+看看下面的代码，是否能够明白了？  
+
+    <script>
+        var f = a = {};
+        f.c = f = [];
+        console.log(f.c);
+        console.log(a.c);
+        //答案
+        //undefined
+        //[]
+    </script>
+
+持续更新中。。。
