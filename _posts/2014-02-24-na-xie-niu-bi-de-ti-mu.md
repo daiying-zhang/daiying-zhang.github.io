@@ -69,7 +69,7 @@ category: snippets
 >        * Type(lref) is Reference is true  
 >        * IsStrictReference(lref) is true  
 >        * Type(GetBase(lref)) is Environment Record  
->        *GetReferencedName(lref) is either "eval" or "arguments"  
+>        * GetReferencedName(lref) is either "eval" or "arguments"  
 >    5. Call PutValue(lref, rval).  
 >    6. Return rval.   
 
