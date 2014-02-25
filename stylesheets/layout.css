@@ -9,6 +9,7 @@
 @import "./mod-list.css";
 @import "./mod-content.css";
 @import "./mod-pager.css";
+@import "./mod-disqus.css";
 @import "./mod-footer.css";
 
 /*.inner{max-width:840px;padding:20px 10px;margin:0 auto}*/
@@ -28,7 +29,7 @@
 
     .mod-content .post{padding-bottom: 50px;}
     .mod-content .description{margin-top: 0; }
-    .mod-content .post h1{font-size:26px; padding: 20px 0;margin: 0;}
+    .mod-content .post h1{font-size:26px; padding: 20px 5px;margin: 0;}
 }
 
 /*
