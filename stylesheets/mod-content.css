@@ -3,7 +3,7 @@
  * @author daiying.zhang
  */
 
-.mod-content{min-height:600px;padding: 5px;background: #ffffff;border-top:1px solid #111;border-bottom:1px solid #111}
+.mod-content{min-height:400px;padding: 5px;background: #ffffff;border-top:1px solid #111;border-bottom:1px solid #111}
 .mod-content .post{max-width:840px; margin:0 auto;padding-bottom: 90px;}
 .mod-content .post h1{padding: 60px 0 20px;margin: 0; color:#464646;font-size: 32px;}
 .mod-content .post .read-more{background: #5F8BA8;display:inline-block;padding:1px 8px; border-radius:4px}
