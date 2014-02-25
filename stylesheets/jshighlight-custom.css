@@ -1,5 +1,5 @@
 pre{
-    font-family:Monaco,Consolas,"Lucida Console","Courier New",serif;
+    /*font-family:Monaco,Consolas,"Lucida Console","Courier New",serif;*/
     font-size:13px;
     line-height:18px;
     padding:10px 10px 10px 42px;
@@ -25,12 +25,12 @@ pre{
     text-align:right;
 }
 /*==js styles==*/
-.com{ color:#75715E }
+.com{ color:#007500 }
 .doc{ color:#0099FF }
-.str{ color:#359933 }
-.key{ color:#0033CC; font-weight: bold }
-.obj{ color:#9700CC; font-weight:bold }
-.num{ color:#FF0093 }
+.str{ color:#A10C08 }
+.key{ color:#0404FF; font-weight: bold }
+.obj{ color:#26A5D1; font-weight:bold }
+.num{ color:#FF0205 }
 .ope{ color:#0000FF }
 .bol{ color:#FF5600; font-style: italic }
 /*==html styles==*/
