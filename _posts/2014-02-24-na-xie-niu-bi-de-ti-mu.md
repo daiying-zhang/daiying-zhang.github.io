@@ -74,9 +74,12 @@ category: snippets
 >    6. Return rval.   
 
 上面是ECMA262中得内容，从上面的规定可以看出：
-    * 先把<code>f.c</code>解析成<code>reference</code>：<code>lref</code>
-    * <code>rval</code>的值为执行<code>f=[]</code>的返回值<code>[]</code>,此时<code>f</code>已经不再指向<code>{}</code>了
-    * 再将<code>rval</code>赋给<code>lref</code>
+
+* 先把<code>f.c</code>解析成<code>reference</code>：<code>lref</code>  
+    
+* <code>rval</code>的值为执行<code>f=[]</code>的返回值<code>[]</code>,此时<code>f</code>已经不再指向<code>{}</code>了
+    
+* 再将<code>rval</code>赋给<code>lref</code>
 
 看看下面的代码，是否能够明白了？  
 
