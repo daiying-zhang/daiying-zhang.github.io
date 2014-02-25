@@ -3,8 +3,8 @@ pre{
     font-size:13px;
     line-height:18px;
     padding:10px 10px 10px 42px;
-    border:1px #CCC solid;
-    background:#F9F9F9;
+    /*border:1px #CCC solid;*/
+    background:rgba(249, 249, 249, 0.1);
     color:#000000;
     overflow-x: auto;
     position: relative;
@@ -31,7 +31,7 @@ pre{
 .key{ color:#0404FF; font-weight: bold }
 .obj{ color:#26A5D1; font-weight:bold }
 .num{ color:#FF0205 }
-.ope{ color:#0000FF }
+.ope{ color:#D400A0 }
 .bol{ color:#FF5600; font-style: italic }
 /*==html styles==*/
 .mrk{ color:#0033CC }
