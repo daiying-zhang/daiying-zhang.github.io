@@ -46,6 +46,11 @@ category: snippets
         //10,2
     </script>
     
+主要是<code>this</code>指向
+
+* <code>fn()</code>作为函数调用，<code>this</code>指向<code>window</code>
+* <code>arguments\[0\]\(\)</code>作为方法调用，<code>this</code>指向调用者<code>arguments</code>
+    
 ## T2
 
     <script>
