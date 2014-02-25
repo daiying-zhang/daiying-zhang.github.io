@@ -93,4 +93,27 @@ category: snippets
         //[]
     </script>
 
+##T3
+
+    <script>
+        var foo = {
+            bar: function () {
+               console.log(this);
+            }
+        };
+                     
+        foo.bar();
+        (foo.bar)();
+                     
+        (foo.bar = foo.bar)();
+        (foo.bar, foo.bar)();
+        //答案
+        //foo
+        //foo
+        //window
+        //window
+    </script>
+
+
+
 持续更新中。。。
