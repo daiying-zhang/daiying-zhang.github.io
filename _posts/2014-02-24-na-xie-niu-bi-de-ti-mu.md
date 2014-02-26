@@ -4,7 +4,7 @@ title: 那些牛逼的题目[收集]
 category: snippets
 ---
 
-这里会收集一些比较“深奥”的题目，争取把其中的原因弄懂。
+这里会收集一些比较“深奥”的题目，争取把其中的原因弄懂。写得「通俗易懂」，不是科技文，也没那么严谨，表述的也不好。没办法，语文没学好 :(
 
 程序员，没办法，习惯下标从0开始 :)
 
@@ -48,8 +48,8 @@ category: snippets
     
 主要是<code>this</code>指向
 
-* <code>fn()</code>作为函数调用，<code>this</code>指向<code>window</code>
-* <code>arguments\[0\]\(\)</code>作为方法调用，<code>this</code>指向调用者<code>arguments</code>
+* `fn()`作为函数调用，`this`</code>指向`window`
+* `arguments[0]()`作为方法调用，`this`指向调用者`arguments`
     
 ## T2
 
@@ -60,7 +60,8 @@ category: snippets
         //答案
         //undefined
     </script>
-    
+   
+>   
 > The production AssignmentExpression : LeftHandSideExpression = AssignmentExpression is evaluated as follows:  
 >    1. Let lref be the result of evaluating LeftHandSideExpression.  
 >    2. Let rref be the result of evaluating AssignmentExpression.  
@@ -72,14 +73,15 @@ category: snippets
 >        * GetReferencedName(lref) is either "eval" or "arguments"  
 >    5. Call PutValue(lref, rval).  
 >    6. Return rval.   
+>  
 
 上面是ECMA262中得内容，从上面的规定可以看出：
 
-* 先把<code>f.c</code>解析成<code>reference</code>：<code>lref</code>  
+* 先把`f.c`解析成`reference`：`lref`
     
-* <code>rval</code>的值为执行<code>f=[]</code>的返回值<code>[]</code>,此时<code>f</code>已经不再指向<code>{}</code>了
+* `rval`的值为执行`f=[]`的返回值`[]`,此时`f`已经不再指向`{}`了
     
-* 再将<code>rval</code>赋给<code>lref</code>
+* 再将`rval`赋给`lref`
 
 看看下面的代码，是否能够明白了？  
 
@@ -114,6 +116,26 @@ category: snippets
         //window
     </script>
 
+感觉很深奥（对于少数人来说：不深奥）
+
+* 如果调用函数的括号`()`左边包含`Reference`,那么`this`值由`Reference`的`base`提供；
+
+* 如果不包含`Reference`，`this`值为`null`，但是`null`对于`this`来说没有任何意义，被设置成`global`；
+
+第一种情况`foo.bar`在中间过程中产生的`Reference`为:
+
+    var fooBarReference = {
+        base : foo,
+        referenceName : 'bar'
+    }
+
+`this`为`foo`
+
+第二种情况，分组表达式没有触发`GetValue`来获取实际值，返回的依旧是`Reference`，所以~~~~，你懂得
+
+第三种情况，简单赋值操作符`=`，会获取`foo.bar`的实际值，并将这个实际值作为表达式的返回值，此时函数调用的括号左边已经不是`Reference`，所以，`this`为`null` ==> `global` ==> `window`
+
+第四种情况，跟第三种情况差不多，你应该也懂得~~~ :(
 
 
 持续更新中。。。
