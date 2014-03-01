@@ -29,25 +29,25 @@ category: plugins
 
 ## 使用步骤
 
-1. 在`<head>`中引入相应的样式文件：
+1.在`<head>`中引入相应的样式文件：
 
         <!--默认样式--> 
         <link href="../theme/jshighlight-default.css" rel="stylesheet" />
     
-2. 在`</body>`前中引入相应js文件：
+2.在`</body>`前中引入相应js文件：
 
         <!--核心js文件--> 
         <script src="../js/jshighlight.core-v1.0.1.min.js"></script>
     
-3. 在需要着色的pre标签中加入`data-language`属性，取值为：`javascript|html|css`，扩展后可以设置其他的值；
+3.在需要着色的pre标签中加入`data-language`属性，取值为：`javascript|html|css`，扩展后可以设置其他的值；
 
 ## 如何扩展
 
-1. 在`<body>`中引入相应js文件：
+1.在`<body>`中引入相应js文件：
 
         <script src="../js/jshighlight.core-v1.0.0.min.js"></script> 
     
-2. 自定义需要着色的语言所需要的样式，例如：
+2.自定义需要着色的语言所需要的样式，例如：
 
         <style>
             .php-com{
@@ -83,7 +83,7 @@ category: plugins
             .val{ color:#E6DB74 } /*属性值*/
         </style>
     
-3. 定义提取需要着色的内容的正则，比如：
+3.定义提取需要着色的内容的正则，比如：
 
         <script>
             'com' : /(\/\*[\s\S]*?\*\/|\/\/.*|&lt;\!--[\s\S]*?--&gt;)/, //普通注释 
@@ -91,7 +91,7 @@ category: plugins
             'str' : /('(?:(?:\\'|[^'\r\n])*?)'|"(?:(?:\\"|[^"\r\n])*?)")/, //字符串
         </script>
     
-4. 调用`JSHL`的`extendLanguage`方法：
+4.调用`JSHL`的`extendLanguage`方法：
 
         <script>
             JSHL.extendLanguage('php',{
