@@ -121,7 +121,7 @@ jshighlight-一款基于javascript的轻量级的代码着色插件，这个插�
 ![Eiffel theme](/images/content/plugins/jshighlight/Eiffel.png)
 
 ### Blackboard Theme
-![Blackboard theme](/images/content/plugins/jshighlight/BlackBoard.png)
+![Blackboard theme](/images/content/plugins/jshighlight/Blackboard.png)
 
 ## 插件代码
   <https://github.com/daiying-zhang/jshighlight>
