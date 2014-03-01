@@ -20,6 +20,7 @@ name: plugins
         <p>
             {{ post.excerpt  | strip_html | truncate: 500 }}
         </p>
+        <div class="read-more"><a href="{{ site.baseurl}}{{ post.url }}">Read More...</a></div>
     </div>
 </li>
 {% endfor %}
