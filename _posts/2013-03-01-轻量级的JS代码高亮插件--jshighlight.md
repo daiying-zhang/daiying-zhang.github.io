@@ -131,7 +131,7 @@ jshighlight-一款基于javascript的轻量级的代码着色插件，这个插�
   <http://www.imf2e.com/jquery.jqdrag/demo.html>
 
 ## E-Mail
-  97532151@qq.com
+  <97532151@qq.com>
 
 ## Site
   <http://www.imf2e.com/jshighlight/>
