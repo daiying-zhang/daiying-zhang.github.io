@@ -129,12 +129,3 @@ category: plugins
 
 ### Blackboard Theme
 ![Blackboard theme](/images/content/plugins/jshighlight/Blackboard.png)
-
-## 插件代码
-
-<https://github.com/daiying-zhang/jshighlight>
-
-## Email
-
-<97532151@qq.com>
-
