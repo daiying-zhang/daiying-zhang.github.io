@@ -48,6 +48,7 @@ category: plugins
         <script src="../js/jshighlight.core-v1.0.0.min.js"></script> 
     
 2. 自定义需要着色的语言所需要的样式，例如：
+
         <style>
                 .php-com{
                     color: #CCC;
@@ -76,7 +77,7 @@ category: plugins
                 .num{ color:#F92672 } /*数字*/
                 .ope{ color:#FD971F } /*操作符*/
                 .bol{ color:#FF5600; font-style: italic } /*布尔值*/
-                
+        
                 .mrk{ color:#F92665 } /*html标签*/
                 .attr{ color:#A6E22E } /*属性名称*/
                 .val{ color:#E6DB74 } /*属性值*/
