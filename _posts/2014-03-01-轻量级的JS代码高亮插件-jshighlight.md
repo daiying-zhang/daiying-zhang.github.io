@@ -115,13 +115,13 @@ jshighlight-一款基于javascript的轻量级的代码着色插件，这个插�
 ![Default theme](/images/content/plugins/jshighlight/default.png)
 
 ### iPlastic Theme
-![Default theme](/images/content/plugins/jshighlight/iPlastic.png)
+![iPlastic theme](/images/content/plugins/jshighlight/iPlastic.png)
 
 ### Eiffel Theme
-![Default theme](/images/content/plugins/jshighlight/Eiffel.png)
+![Eiffel theme](/images/content/plugins/jshighlight/Eiffel.png)
 
 ### Blackboard Theme
-![Default theme](/images/content/plugins/jshighlight/BlackBoard.png)
+![Blackboard theme](/images/content/plugins/jshighlight/BlackBoard.png)
 
 ## 插件代码
   <https://github.com/daiying-zhang/jshighlight>
