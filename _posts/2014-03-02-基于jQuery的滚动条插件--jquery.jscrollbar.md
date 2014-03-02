@@ -40,39 +40,42 @@ jquery.jscrollbar 是一个基于jQuery的滚动条插件，支持水平滚动�
     <div style="width:1300px;height:600px;">Some long text or other elements...</div>
 
 3.调用插件：
-
-    $(function(){
-        $('#test1,#test2').jscrollbar({
-            //some options
+    
+    <script>
+        $(function(){
+            $('#test1,#test2').jscrollbar({
+                //some options
+            });
         });
-    });
-
+    </script>
+    
 ### 示例代码
-
-    $(function(){
-        $('#test1,#test2').jscrollbar({
-            width:12, //滚动条宽度
-            color:'orange', //滚动条颜色
-            opacity:0.7, //透明度
-            position:'inner', //滚动条位置
-            mouseScrollDirection:'horizontal' //鼠标滚动时滚动的方向
+    <script>
+        $(function(){
+            $('#test1,#test2').jscrollbar({
+                width:12, //滚动条宽度
+                color:'orange', //滚动条颜色
+                opacity:0.7, //透明度
+                position:'inner', //滚动条位置
+                mouseScrollDirection:'horizontal' //鼠标滚动时滚动的方向
+            });
+    
+            var jsb2 = $('#test2').jscrollbar('getObject');
+    
+            setTimeout(function(){
+                $('#test2 img').css({width:'4000px'});
+                    //滚动实例的链式调用，无法使用jQuery操作DOM的方法 [不推荐]
+                    jsb2.updateUI()
+                         .scrollTo('x',100)
+                         .scrollBy('x',50);
+    
+                    //jQuery的链式调用，可以使用jQuery操作DOM的方法  [推荐]
+                    $('#test1').jscrollbar('scrollBy','x',10)
+                               .jscrollbar('scrollTo','x',300)
+                               .animate({'opacity':0.8},1000);
+            },2000)
         });
-
-        var jsb2 = $('#test2').jscrollbar('getObject');
-
-        setTimeout(function(){
-            $('#test2 img').css({width:'4000px'});
-                //滚动实例的链式调用，无法使用jQuery操作DOM的方法 [不推荐]
-                jsb2.updateUI()
-                     .scrollTo('x',100)
-                     .scrollBy('x',50);
-
-                //jQuery的链式调用，可以使用jQuery操作DOM的方法  [推荐]
-                $('#test1').jscrollbar('scrollBy','x',10)
-                           .jscrollbar('scrollTo','x',300)
-                           .animate({'opacity':0.8},1000);
-        },2000)
-    });
+    </script>
 
 ### E-Mail
 
