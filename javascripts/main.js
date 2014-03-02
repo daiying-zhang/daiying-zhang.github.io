@@ -4,9 +4,7 @@
     }
 
     var trigger = $('js-menu-icon');
-    console.log(trigger);
     trigger && (trigger.onclick = function(e){
-        console.log('ddd');
         var nav = $('js-nav'),
             statu = nav.style.display;
 
@@ -16,4 +14,4 @@
             nav.style.display = 'none'
         }
     })
-});
+})();
