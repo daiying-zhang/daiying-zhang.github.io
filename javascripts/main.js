@@ -6,7 +6,6 @@
     trigger && (trigger.onclick = function(e){
         var nav = $('js-nav'),
             statu = nav.style.display;
-        console.log(statu);
         if(statu === 'none' || statu === ""){
             nav.style.display = 'block'
         }else{
