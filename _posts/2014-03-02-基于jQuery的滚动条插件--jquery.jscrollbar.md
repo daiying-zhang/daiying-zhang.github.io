@@ -76,9 +76,3 @@ jquery.jscrollbar 是一个基于jQuery的滚动条插件，支持水平滚动�
             },2000)
         });
     </script>
-
-## 插件源码
-<https://github.com/daiying-zhang/jquery.jscrollbar>
-
-## 在线演示
-<http://blog.sanjh.cn/plugs/jscrollbar/example/index.html>
