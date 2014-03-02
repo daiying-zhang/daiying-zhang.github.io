@@ -21,7 +21,8 @@
     .mod-header{padding: 5px}
     .mod-header .blog-desc{display: none}
     .mod-header .blog-title{font-size: 30px}
-    .mod-nav{font-size: 20px; line-height: 30px; }
+    .mod-header .menu-icon{display: block}
+    .mod-nav{display:none; font-size: 20px; line-height: 30px; }
 
     .mod-list .post{padding-bottom: 50px; padding-left:5px; padding-right:5px;}
     .mod-list .description{margin-top: 0; }
@@ -33,6 +34,7 @@
     
     .mod-disqus{padding-left:5px; padding-right:5px;}
     .mod-footer .content{padding-left: 5px; padding-right:5px;}
+
 }
 
 /*
