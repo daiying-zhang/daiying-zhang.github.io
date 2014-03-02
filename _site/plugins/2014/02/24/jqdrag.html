@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="主要功能
+
+
+元素拖动；
+
+支持拖动前、拖动中、拖动完成时的事件处理；
+
+支持拖动方向限定；
+
+支持拖动范围限定；
+
+支持指定拖动触发器元素，
+
+提供外部方法。
+" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/layout.css">
+    <link rel="stylesheet" href="/stylesheets/jshighlight-custom.css"/>
+    <link rel="shortcut icon" href="/images/code.png"/>
+    <title>分享一个基于jQuery的拖动插件--jquery.jqdrag-ImF2e</title>
+</head>
+
+<body>
+<!-- HEADER -->
+<div class="mod-header outer">
+    <header class="content">
+        <div class="title">
+            <h2 class="blog-title">ImF2e</h2>
+            <p class="blog-desc">I'm Front End Engineer</p>
+        </div>
+        <nav class="mod-nav">
+            <ul>
+                
+                <li>
+                    <a class="" href="/">Index</a>
+                </li>
+                
+                <li>
+                    <a class="" href="/snippets.html">Snippets</a>
+                </li>
+                
+                <li>
+                    <a class="" href="/plugins.html">Plugins</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+</div>
+<!-- MAIN CONTENT -->
+<div class="mod-content outer">
+    <div class="post">
+        <h1>分享一个基于jQuery的拖动插件--jquery.jqdrag</h1>
+        <p class="description">
+            <time pubdate="2014-02-24">2014-02-24</time>
+        </p>
+        <h3 id="">主要功能</h3>
+
+<ol>
+<li>元素拖动；</li>
+
+<li>支持拖动前、拖动中、拖动完成时的事件处理；</li>
+
+<li>支持拖动方向限定；</li>
+
+<li>支持拖动范围限定；</li>
+
+<li>支持指定拖动触发器元素，</li>
+
+<li>提供外部方法。</li>
+</ol>
+
+<h3 id="_2">示例代码</h3>
+<pre data-language='javascript'>
+$('#drag').jqdrag({
+	minX:0, //不能超过右边界
+	minY:0, //不能超过左边界
+	type:'x', //只能水平方向拖动
+	onbeforedrag:function(){
+		//....
+	},
+	ondragend:function(){
+		//...
+	},
+	ondrag:function(){
+		//...
+	}
+});
+
+//对外方法
+setTimeout(function(){
+	//drag实例的链式调用，无法使用jQuery操作DOM的方法 [不推荐]
+	$('#drag2').jqdrag('getObject')
+        	.setOption({maxX:400,maxY:400,minX:10,minY:10})
+        	.update();
+
+	//jQuery的链式调用，可以使用jQuery操作DOM的方法  [推荐]
+	$('#drag3').jqdrag('setOption',{maxX:500,maxY:400,minX:100,minY:100})
+           	.jqdrag('update')
+           	.css({'background':'red'});
+},10000);
+</pre>
+<h3 id="_3">在线演示</h3>
+
+<p><a href="http://www.imf2e.com/jquery.jqdrag/demo.html">http://www.imf2e.com/jquery.jqdrag/demo.html</a></p>
+
+<h3 id="email">E-Mail</h3>
+
+<p>97532151@qq.com</p>
+
+<h3 id="site">Site</h3>
+
+<p><a href="http://www.imf2e.com/jquery.jqdrag/">http://www.imf2e.com/jquery.jqdrag/</a></p>
+    </div>
+</div>
+<div class="mod-disqus">
+     <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'imf2e'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>
+<!-- FOOTER  -->
+<div class="mod-footer outer">
+    <footer class="content">
+        <p class="copyright">ImFee maintained by <a href="https://github.com/daiying-zhang">daiying-zhang</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+    </footer>
+</div>
+<script src="/javascripts/jshighlight.core-v1.0.2.src.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-48347993-1', 'imf2e.com');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
