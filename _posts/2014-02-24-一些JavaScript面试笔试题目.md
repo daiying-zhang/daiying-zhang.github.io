@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 那些牛逼的题目[收集]
+title: 一些JavaScript面试笔试题目[收集]
 category: snippets
 ---
 
@@ -134,6 +134,30 @@ category: snippets
 第二种情况，分组表达式没有触发`GetValue`来获取实际值，返回的依旧是`Reference`，所以~~~~，你懂得
 
 第三种情况，简单赋值操作符`=`，会获取`foo.bar`的实际值，并将这个实际值作为表达式的返回值，此时函数调用的括号左边已经不是`Reference`，所以，`this`为`null` ==> `global` ==> `window`
+
+至于为什么`this`为`null`时会转换成`global`，看看下面的就知道了:
+
+> 10.4.3 Entering Function Code
+
+> The following steps are performed when control enters the execution context for function code contained in function object F, a caller provided thisArg, and a caller provided argumentsList:  
+
+> 1. If the function code is strict code, set the ThisBinding to thisArg.  
+
+> 2. Else if thisArg is `null` or `undefined`, set the ThisBinding to the global object.  
+
+> 3. Else if Type(thisArg) is not Object, set the ThisBinding to ToObject(thisArg).  
+
+> 4. Else set the ThisBinding to thisArg.  
+
+> 5. Let localEnv be the result of calling NewDeclarativeEnvironment passing the value of the [[Scope]] internal property of F as the argument.  
+
+> 6. Set the LexicalEnvironment to localEnv.  
+
+> 7. Set the VariableEnvironment to localEnv.  
+
+> 8. Let code be the value of F‘s [[Code]] internal property.  
+
+> 9. Perform Declaration Binding Instantiation using the function code code and argumentsList as described in 10.5.  
 
 第四种情况，跟第三种情况差不多，你应该也懂得~~~ :(
 
