@@ -21,8 +21,10 @@ category: article
 2. Let base be the result of calling GetBase(*V*).
 3. If IsUnresolvableReference(*V*), throw a **ReferenceError** exception.
 4. If IsPropertyReference(*V*), then  
+
     a. If HasPrimitiveBase(*V*) is **false**, then let get be the [[Get]] internal method of base, otherwise let get be the special [[Get]] internal method defined below.  
     b. Return the result of calling the get internal method using *base* as its **this** value, and passing GetReferencedName(*V*) for the argument.
+    
 5. Else, *base* must be an environment record.  
     a. Return the result of calling the GetBindingValue (see 10.2.1) concrete method of base passing GetReferencedName(*V*) and IsStrictReference(*V*) as arguments.  
   
