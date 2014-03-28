@@ -5,9 +5,9 @@ paginate: 15
 
 #导航
 navs :
-  - text : Index
+  - text : index
     url  : /
-  - text : Snippets
+  - text : snippets
     url  : /snippets.html
-  - text : Plugins
+  - text : plugins
     url  : /plugins.html
