@@ -45,4 +45,4 @@ category: article
 
 而在特殊定义的[[get]]方法的第一步，就将`base`转换成了`Object`，然后，然后就。。。。自己意会吧:)
 
-其实，本人莺歌里氏不咋地，上面的东西就不翻译了，万一看不懂，那就[Google一下](https://www.google.com.hk/webhp?hl=zh-CN)吧。
+莺歌里氏不咋地，上面的东西就不翻译了，万一看不懂，那就[Google一下](https://www.google.com.hk/webhp?hl=zh-CN)吧。
