@@ -41,7 +41,7 @@ category: article
 >**NOTE** The object that may be created in step 1 is not accessible outside of the above method. An implementation might choose to avoid the actual creation of the object. The only situation where such an actual property access that uses this internal method can have visible effect is when it invokes an accessor function.
 
 貌似有点多:(   
-不过没办法，人家就是这么写得，其实关键的地方在`GetValue`的第4步，在4.a里面，如果`HasPrimitiveBase(*V*)`为`true`（也就是说引用的基值`base`为基本数据类型），就去调用下面那个特殊的[[get]]方法。
+不过没办法，人家就是这么写得，其实关键的地方在`GetValue`的第4步，在4.a里面，如果`HasPrimitiveBase(V)`为`true`（也就是说引用的基值`base`为基本数据类型），就去调用下面那个特殊的[[get]]方法。
 
 而在特殊定义的[[get]]方法的第一步，就将`base`转换成了`Object`，然后，然后就。。。。自己意会吧:)
 
