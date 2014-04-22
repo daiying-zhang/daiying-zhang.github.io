@@ -19,7 +19,7 @@ A:
  
 Q:
 
-> An anonymous function is just a function that has no name; nothing more. A closure is a function that captures the state of the surrounding environment.
+> **An anonymous function is just a function that has no name;** nothing more. **A closure is a function that captures the state of the surrounding environment.**
 >  
 > An anonymous function does not necessarily need to create a closure, and a closure is not created only for anonymous functions.
 >    
