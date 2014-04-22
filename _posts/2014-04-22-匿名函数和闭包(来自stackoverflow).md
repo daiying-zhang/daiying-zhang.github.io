@@ -55,4 +55,4 @@ Q:
         })("John Doe", greeting);
     }
     
- 原文地址：<http://stackoverflow.com/questions/4912116/closure-vs-anonymous-function-difference>
+ 原文地址：http://stackoverflow.com/questions/4912116/closure-vs-anonymous-function-difference
