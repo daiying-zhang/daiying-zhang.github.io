@@ -13,8 +13,7 @@ A:
 > I have been unable to find a definition that clearly explains the differences between a closure and an anonymous function.  
 >   
 > Most references I have seen clearly specify that they are distinct "things" yet I can't seem to get my head around why.  
->
- Could someone please simplify it for me? What are the specific differences between these two language features? Which one is more appropriate in what scenarios?
+> Could someone please simplify it for me? What are the specific differences between these two language features? Which one is more appropriate in what scenarios?
  
  
 Q:
@@ -55,4 +54,4 @@ Q:
         })("John Doe", greeting);
     }
     
- 原文地址：http://stackoverflow.com/questions/4912116/closure-vs-anonymous-function-difference
+ 原文地址： <http://stackoverflow.com/questions/4912116/closure-vs-anonymous-function-difference>
