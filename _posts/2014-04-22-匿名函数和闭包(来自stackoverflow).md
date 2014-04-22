@@ -59,6 +59,6 @@ Q:
  
  另外，附上MDN中对闭包的讲解:
  
- Closures - JavaScript(English):  <http://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures>
+ Closures - JavaScript(English)： <http://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures>
    
- 闭包 - JavaScript(中文):  <http://developer.mozilla.org/zh-CN/docs/JavaScript/Guide/Closures>
+ 闭包 - JavaScript(中文)： <http://developer.mozilla.org/zh-CN/docs/JavaScript/Guide/Closures>
