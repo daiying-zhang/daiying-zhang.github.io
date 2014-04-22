@@ -4,7 +4,7 @@ title : 匿名函数和闭包(来自stackoverflow)
 category: article
 ---
 
-引用一个stackoverflow的提问：
+引用一个stackoverflow的提问，个人觉得总结的比较好的两句话: "**An anonymous function is just a function that has no name; nothing more. A closure is a function that captures the state of the surrounding environment.**"
 
 A:
 
