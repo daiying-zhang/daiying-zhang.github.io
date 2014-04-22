@@ -60,7 +60,7 @@ function JSHL(langName){
         len = pres.length,
         pre = null,
         index = 0,
-        lang = 'html',
+        lang = 'javascript',
         html,outer;
 
     /**
