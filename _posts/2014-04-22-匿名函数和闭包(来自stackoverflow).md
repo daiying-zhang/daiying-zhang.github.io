@@ -12,7 +12,8 @@ A:
 >  
 > I have been unable to find a definition that clearly explains the differences between a closure and an anonymous function.  
 >   
-> Most references I have seen clearly specify that they are distinct "things" yet I can't seem to get my head around why.  
+> Most references I have seen clearly specify that they are distinct "things" yet I can't seem to get my head around why. 
+>  
 > Could someone please simplify it for me? What are the specific differences between these two language features? Which one is more appropriate in what scenarios?
  
  
