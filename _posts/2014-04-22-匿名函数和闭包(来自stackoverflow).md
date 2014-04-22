@@ -56,3 +56,8 @@ Q:
     }
     
  原文地址： <http://stackoverflow.com/questions/4912116/closure-vs-anonymous-function-difference>
+ 
+ 另外，附上MDN中对闭包的讲解:
+ 
+ Closures - JavaScript(English):  <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures>
+ 闭包 - JavaScript(中文):  <https://developer.mozilla.org/zh-CN/docs/JavaScript/Guide/Closures>
