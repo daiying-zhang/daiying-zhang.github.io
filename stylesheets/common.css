@@ -28,7 +28,7 @@ pre,code{color:#f92665;border: 1px solid #ddd;background-color: #f8f8f8;font-fam
 pre{padding:10px;box-shadow:0 0 10px rgba(0,0,0,.1);overflow:auto}
 code{padding:3px;margin:0 3px;box-shadow:0 0 10px rgba(0,0,0,.1); position:relative; top:-2px;}
 pre code{display:block;box-shadow:none}
-blockquote{position:relative;font-family: georgia, sans-serif;font-size: 16px;color: #3D3D3D;margin-bottom:20px;font-style:italic;padding:20px 0 0 20px;/* border-left: 3px solid #EBE3E3; */}
+blockquote{position:relative;font-family: georgia, sans-serif;font-size: 18px;color: #3D3D3D;margin-bottom:20px;font-style:italic;padding:20px 0 0 20px;/* border-left: 3px solid #EBE3E3; */}
 blockquote:before{content:"\201C";font-size:60px;position:absolute;left:-10px;top:-10px;font-family:georgia,serif;color:#eee;}
 ul,ol,dl{margin-bottom:15px}
 ul{list-style:inside;padding-left:20px}
