@@ -4,7 +4,9 @@ title : 匿名函数和闭包(来自stackoverflow)
 category: article
 ---
 
-引用一个stackoverflow的提问，个人觉得总结的比较好的两句话: "**An anonymous function is just a function that has no name; nothing more. A closure is a function that captures the state of the surrounding environment.**"
+## 引用一个stackoverflow的提问
+
+个人觉得总结的比较好的两句话: "**An anonymous function is just a function that has no name; nothing more. A closure is a function that captures the state of the surrounding environment.**"
 
 A:
 
@@ -62,3 +64,8 @@ Q:
  Closures - JavaScript(English)： <http://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures>
    
  闭包 - JavaScript(中文)： <http://developer.mozilla.org/zh-CN/docs/JavaScript/Guide/Closures>
+ 
+ 
+ ## Dmitry Soshnikov对于闭包的简要概括
+ 
+ > Closures in ECMAScript are directly related with the [[Scope]] property of functions. As it has been noted, [[Scope]] is saved at function creation and exists until the function object is destroyed. **Actually, a closure is exactly a combination of a function code and its [[Scope]] property.** Thus, [[Scope]] contains that lexical environment (the parent variable object) in which function is created. Variables from higher contexts at the further function activation will be searched in this lexical (statically saved at creation) chain of variable objects.
