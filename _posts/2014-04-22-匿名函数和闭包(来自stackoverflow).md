@@ -65,7 +65,7 @@ Q:
    
  闭包 - JavaScript(中文)： <http://developer.mozilla.org/zh-CN/docs/JavaScript/Guide/Closures>
  
+
+## Dmitry Soshnikov对于闭包的简要概括
  
- ## Dmitry Soshnikov对于闭包的简要概括
- 
- > Closures in ECMAScript are directly related with the [[Scope]] property of functions. As it has been noted, [[Scope]] is saved at function creation and exists until the function object is destroyed. **Actually, a closure is exactly a combination of a function code and its [[Scope]] property.** Thus, [[Scope]] contains that lexical environment (the parent variable object) in which function is created. Variables from higher contexts at the further function activation will be searched in this lexical (statically saved at creation) chain of variable objects.
+> Closures in ECMAScript are directly related with the [[Scope]] property of functions. As it has been noted, [[Scope]] is saved at function creation and exists until the function object is destroyed. **Actually, a closure is exactly a combination of a function code and its [[Scope]] property.** Thus, [[Scope]] contains that lexical environment (the parent variable object) in which function is created. Variables from higher contexts at the further function activation will be searched in this lexical (statically saved at creation) chain of variable objects.
