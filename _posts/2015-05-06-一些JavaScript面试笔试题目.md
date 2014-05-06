@@ -12,39 +12,37 @@ category: snippets
 
 这个题目或许本身不难，但是请试试，能不能把它解释清楚。
 
-    <script>
-        function A(){}
-        A.prototype = {x : 10}
-        var a = new A();
-        
-        A.prototype = {x : 10, y : 20};
-        var b = new A();
-        
-        console.log(a.x, a.y);
-        console.log(b.x, b.y);
-        
-        //答案
-        //10,undefined
-        //10,20
-    </script>
+    function A(){}
+    A.prototype = {x : 10}
+    var a = new A();
+    
+    A.prototype = {x : 10, y : 20};
+    var b = new A();
+    
+    console.log(a.x, a.y);
+    console.log(b.x, b.y);
+    
+### 答案
+
+    //10,undefined
+    //10,20
 
 ## T1
 
-    <script>
-        var length = 10;
+    var length = 10;
 
-        function test(fn){
-            fn();  
-            arguments[0]();
-        }
+    function test(fn){
+        fn();  
+        arguments[0]();
+    }
 
-        test(function(){
-            alert(this.length)
-        }, length);
+    test(function(){
+        alert(this.length)
+    }, length);
 
-        //答案
-        //10,2
-    </script>
+### 答案
+    
+    // 10,2
     
 主要是<code>this</code>指向
 
@@ -53,13 +51,13 @@ category: snippets
     
 ## T2
 
-    <script>
-        var f = {};
-        f.c = f = [];
-        console.log(f.c);
-        //答案
-        //undefined
-    </script>
+    var f = {};
+    f.c = f = [];
+    console.log(f.c);
+    
+### 答案
+
+    //undefined
    
 >   
 > The production AssignmentExpression : LeftHandSideExpression = AssignmentExpression is evaluated as follows:  
@@ -85,36 +83,35 @@ category: snippets
 
 看看下面的代码，是否能够明白了？  
 
-    <script>
-        var f = a = {};
-        f.c = f = [];
-        console.log(f.c);
-        console.log(a.c);
-        //答案
-        //undefined
-        //[]
-    </script>
+    var f = a = {};
+    f.c = f = [];
+    console.log(f.c);
+    console.log(a.c);
+    
+### 答案
+
+    // undefined
+    // []
 
 ##T3
 
-    <script>
-        var foo = {
-            bar: function () {
-               console.log(this);
-            }
-        };
-                     
-        foo.bar();
-        (foo.bar)();
-                     
-        (foo.bar = foo.bar)();
-        (foo.bar, foo.bar)();
-        //答案
-        //foo
-        //foo
-        //window
-        //window
-    </script>
+    var foo = {
+        bar: function () {
+           console.log(this);
+        }
+    };
+                 
+    foo.bar();
+    (foo.bar)();
+                 
+    (foo.bar = foo.bar)();
+    (foo.bar, foo.bar)();
+### 答案
+    
+    //foo
+    //foo
+    //window
+    //window
 
 感觉很深奥（对于少数人来说：不深奥）
 
@@ -178,7 +175,8 @@ category: snippets
     alert(delete a);
     alert(window.a);
         
-    //答案
+### 答案
+    
     // 10
     // true
     // undefined
