@@ -161,5 +161,40 @@ category: snippets
 
 第四种情况，跟第三种情况差不多，你应该也懂得~~~ :(
 
+## T4
+
+    a = 10;
+    alert(window.a);
+    alert(delete a);
+    alert(window.a);
+    
+    var b = 20;
+    alert(window.b);
+    alert(delete b);
+    alert(window.b);
+    
+    eval('var a = 10;');
+    alert(window.a);
+    alert(delete a);
+    alert(window.a);
+        
+    //答案
+    // 10
+    // true
+    // undefined
+    
+    // 20
+    // false
+    // 20
+    
+    // 10
+    // true
+    // undefined
+    
+**说明**：变量不能通过`delete`删除，引用一段Dmitry Soshnikov的话：
+
+> There is one more important point concerning variables. Variables, in contrast with simple properties, have attribute `{DontDelete}`, meaning impossibility to remove a variable via the `delete` operator
+    
+> However there is one execution context on which this rule **does not affect**. It is the `eval` context: there `{DontDelete}` attribute is not set for variables
 
 持续更新中。。。
