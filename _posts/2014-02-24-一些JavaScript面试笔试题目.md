@@ -197,4 +197,6 @@ category: snippets
     
 > However there is one execution context on which this rule **does not affect**. It is the `eval` context: there `{DontDelete}` attribute is not set for variables
 
+(2015-05-06)
+
 持续更新中。。。
