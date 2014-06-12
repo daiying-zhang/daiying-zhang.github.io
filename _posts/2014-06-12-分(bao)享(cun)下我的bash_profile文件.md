@@ -21,7 +21,7 @@ category: article
     export PS1="$STARTCOLOR\u@\h > $ENDCOLOR"
     # export PS1="Air@\u:\w > "
 
-    export CLICOLOR="xterm-color"
+    export CLICOLOR=1
     export LSCOLORS="gxfxcxdxbxegedabagacad"
 
     export PATH=/usr/local/bin:/usr/local/sbin:$PATH
