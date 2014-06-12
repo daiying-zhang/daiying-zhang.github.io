@@ -8,7 +8,7 @@
 .mod-header .title{width: 210px; float: left}
 .mod-header .content{max-width:840px;margin: 0 auto; padding: 0 5px;}
 .mod-header .blog-title{margin:0;color:#fff;font-size: 36px;font-weight:700;text-shadow:#111 0 0 10px;padding-bottom: 0;}
-.mod-header .blog-desc{color:#fff;font-size: 22px;font-weight:300;background:0;text-shadow:#111 0 0 10px;margin: 0 0 10px;}
+.mod-header .blog-desc{color:#fff;font-size: 20px;font-weight:300;background:0;text-shadow:#111 0 0 10px;margin: 0 0 10px;}
 .mod-header .menu-icon{width:20px; height: 4px; background:#ffffff; display: none; position: absolute; right: 15px; top: 25px; }
 .mod-header .menu-icon:before,
 .mod-header .menu-icon:after{content: ""; position: absolute; top: -7px; left: 0; width: 20px; height: 4px; background: #ffffff }
