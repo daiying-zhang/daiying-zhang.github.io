@@ -56,8 +56,8 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor/
-gems:
-  - jekyll-assets
-  - jekyll-paginate
-  - jekyll-sitemap
+#gems:
+#  - jekyll-assets
+#  - jekyll-paginate
+#  - jekyll-sitemap
 permalink: posts/:slug
