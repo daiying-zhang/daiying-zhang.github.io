@@ -4,15 +4,15 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="author" content="Your Name" />
-    <link rel="stylesheet" href="{{ site.baseUrl }}/styles/master.css">
+    <link rel="stylesheet" href="{{ site.baseUrl }}/statics/reset.css">
+    <link rel="stylesheet" href="{{ site.baseUrl }}/prd/home@dev.css">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
     <title>{{ page.title }}</title>
   </head>
   <body>
-    <header>
-      <h1><a href="/">{{ page.title }}</a></h1>
-    </header>
-    <section>
+    <section class="page-main">
       {{ content }}
     </section>
+    <script src="{{ site.baseUrl }}/prd/home@dev.js"></script>
   </body>
 </html>

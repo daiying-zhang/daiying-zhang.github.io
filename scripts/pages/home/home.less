@@ -1,0 +1,55 @@
+@import "../../common/layout";
+
+.article{
+    &.list {
+        .article-header{
+            padding: 50px 0;
+        }
+    }
+
+    .article-info{
+        position: relative;
+        padding: 30px 0;
+        margin: 30px 0;
+        display: block;
+        border-bottom: 1px solid #ebeaea;
+
+        a{
+            display: block;
+            padding-right: 25px;
+            color: #121111;
+            text-decoration: none;
+        }
+
+        p{
+            display: block;
+            margin: 12px 0 10px;
+            font-size: 15px;
+            color: #615b5b;
+        }
+
+        .info-footer{
+            display: inline-block;
+            font-size: 12px;
+            color: #ada8a8;
+            text-transform: uppercase;
+            vertical-align: middle;
+
+            .divider{
+                margin: 0 15px;
+            }
+
+            .item{
+            }
+        }
+
+        .article-tags{
+            display: inline-block;
+
+            a{
+                display: inline-block;
+                text-decoration: underline;
+            }
+        }
+    }
+}

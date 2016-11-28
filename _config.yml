@@ -1,3 +1,5 @@
-markdown: rdiscount
+paginate: 10
 permalink: /:year/:month/:day/:title
 rdiscount extensions: [smart]
+
+gems: [jekyll-paginate]
