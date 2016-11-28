@@ -1,5 +1,19 @@
 paginate: 10
-permalink: /:year/:month/:day/:title
+permalink: posts/:slug
 rdiscount extensions: [smart]
 
-gems: [jekyll-paginate]
+gems:
+  - jekyll-paginate
+
+collections:
+  tags:
+    output: true
+    permalink: /tag/:slug/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: tags
+    values:
+      layout: articles_by_tag
