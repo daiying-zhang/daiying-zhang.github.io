@@ -1,6 +1,7 @@
 paginate: 10
 permalink: posts/:slug
 rdiscount extensions: [smart]
+safe: false
 
 gems:
   - jekyll-paginate
