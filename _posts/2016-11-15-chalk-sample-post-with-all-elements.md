@@ -75,10 +75,10 @@ If you wish that an image can be enlarged on click use the image include tag. Yo
 - `path-detail`: Image to show when enlarging.
 - `alt`: Alt text for image in blog post.
 
-{% include image.html path="documentation/sample-image.jpg" path-detail="documentation/sample-image@2x.jpg" alt="Sample image" %}
+<img src="/assets/documentation/sample-image@2x.jpg" />
 
 {% highlight html %}
-{% include image.html path="documentation/sample-image.jpg" path-detail="documentation/sample-image@2x.jpg" alt="Sample image" %}
+<img src="/assets/documentation/sample-image@2x.jpg" />
 {% endhighlight %}
 
 Videos can be added and are responsive by default (4x3 by default, 16x9 with extra class).
