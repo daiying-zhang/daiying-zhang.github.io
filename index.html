@@ -1,10 +1,9 @@
 ---
 layout: layout
-title: hello world.
+title: zdying's blog
 description: 前端开发旅途...
 ---
 <ul class="article list">
-    toaal: {{ paginator.total_posts }}
 {% for post in paginator.posts %}
     <li class="article-info">
         <a href="{{ site.baseurl }}{{ post.url }}">
@@ -26,14 +25,17 @@ description: 前端开发旅途...
               {% endunless %}
             </span>
 
-            {% if post.tags.size > 0 %}
             <span class="divider">-</span>
+
             <div class="item article-tags">
-              {% for tag in post.tags %}
-                <a href="{{ 'tag/' | relative_url }}{{ tag }}">{{ tag }}</a>
-              {% endfor %}
+              {% if post.tags.size > 0 %}
+                 {% for tag in post.tags %}
+                    <a href="{{ 'tag/' | relative_url }}{{ tag | replace: ".", "-" }}">{{ tag }}</a>
+                 {% endfor %}
+              {% else %}
+                <a href="{{ 'tag/' | relative_url }}other">OTHER</a>
+              {% endif %}
             </div>
-            {% endif %}
         </div>
     </li>
 {% endfor %}

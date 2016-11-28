@@ -1,0 +1,4 @@
+---
+slug: other
+name: other
+---
