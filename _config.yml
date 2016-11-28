@@ -4,6 +4,7 @@ rdiscount extensions: [smart]
 
 gems:
   - jekyll-paginate
+  - jekyll-assets
 
 collections:
   tags:

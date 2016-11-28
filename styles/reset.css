@@ -43,6 +43,7 @@ pre {
     font-family: monospace,monospace;
     font-size: 1em;
 	margin: 0.5em;
+    overflow: scroll;
 }
 
 a {
@@ -60,6 +61,15 @@ abbr[title] {
     border-bottom: none;
     text-decoration: underline;
     text-decoration: underline dotted
+}
+
+blockquote {
+    padding: 0 0 0 15px;
+    margin: 0;
+    font-style: italic;
+    line-height: 1.6;
+    color: #ada8a8;
+    border-left: 3px solid #615b5b
 }
 
 b,strong {
@@ -113,7 +123,8 @@ audio:not([controls]) {
 }
 
 img {
-    border-style: none
+    border-style: none;
+    max-width: 100%;
 }
 
 svg:not(:root) {
