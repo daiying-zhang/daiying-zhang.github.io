@@ -1,6 +1,6 @@
 .highlight {
     margin: 0;
-    margin: 30px 0;
+    margin: 10px 0;
     overflow: auto;
     font-weight: 400;
     background: #faf9f9;
@@ -11,10 +11,13 @@
 .highlighter-rouge {
     padding: 2px 4px;
     font-size: 14px;
-    color: #e74b3c;
     background: #faf9f9;
     border: 1px solid #ebeaea;
     border-radius: 1px
+}
+
+code.highlighter-rouge{
+    color: #e74b3c;
 }
 
 .highlight .c {

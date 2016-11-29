@@ -103,3 +103,16 @@ function main(args){
     console.log('Result is =>', a, b);
 }
 {% endhighlight %}
+
+~~~ javascript
+function main(args){
+    var a = 1;
+    var b = true;
+
+    console.log('Result is =>', a, b);
+}
+~~~
+
+# This is a test
+
+this is some `code` event。
