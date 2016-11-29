@@ -1,0 +1,43 @@
+body .page-main {
+  width: 650px;
+  margin: 0 auto;
+}
+.article.list .article-header {
+  padding: 50px 0;
+}
+.article .article-info {
+  position: relative;
+  padding: 30px 0;
+  margin: 30px 0;
+  display: block;
+  border-bottom: 1px solid #ebeaea;
+}
+.article .article-info a {
+  display: block;
+  padding-right: 25px;
+  color: #121111;
+  text-decoration: none;
+}
+.article .article-info p {
+  display: block;
+  margin: 12px 0 10px;
+  font-size: 15px;
+  color: #615b5b;
+}
+.article .article-info .info-footer {
+  display: inline-block;
+  font-size: 12px;
+  color: #ada8a8;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.article .article-info .info-footer .divider {
+  margin: 0 10px;
+}
+.article .article-info .article-tags {
+  display: inline-block;
+}
+.article .article-info .article-tags a {
+  display: inline-block;
+  text-decoration: underline;
+}
