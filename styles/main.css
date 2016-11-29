@@ -178,3 +178,15 @@
     border-top: 1px solid #ebeaea;
     padding-top: 20px;
 }
+
+#ds-thread #ds-reset .ds-textarea-wrapper{
+    background: #FFFFFF!important;
+}
+
+#ds-reset .ds-gradient-bg{
+    background: none!important;
+}
+
+#ds-thread #ds-reset .ds-post-button{
+    background-image: none!important;
+}
