@@ -17,13 +17,6 @@
     border-radius: 1px
 }
 
-@media all and (max-width: 767px) {
-    .highlight {
-        padding:50px 25px;
-        font-size: 14px
-    }
-}
-
 .highlight .c {
     font-style: italic;
     color: #998
