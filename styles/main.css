@@ -1,37 +1,72 @@
 /* 布局 */
-.page-header{
-    width: 650px;
-    margin: 0 auto;
-    padding: 55px 0 20px;
-    border-bottom: 1px solid #ebeaea;
-    display: flex;
-    align-items: center;
-}
-.page-main {
-  width: 650px;
-  margin: 0 auto;
+@media (min-width: 769px){
+    .page-header{
+        width: 650px;
+        margin: 0 auto;
+        padding: 30px 15px 30px;
+        border-bottom: 1px solid #ebeaea;
+        display: flex;
+        align-items: center;
+    }
+
+    /* header */
+    .page-header h1,
+    .page-header nav,
+    .page-header nav ul li{
+        display: inline-block;
+        margin-left: 15px;
+    }
+
+    .page-header h1{
+        width: 200px;
+        margin: 0;
+    }
+
+    .page-header nav{
+        flex: 1;
+        text-align: right;
+    }
+
+    .page-header .list{
+        margin: 0;
+    }
+
+    .page-main {
+      width: 650px;
+      margin: 0 auto;
+    }
 }
 
-/* header */
-.page-header h1,
-.page-header nav,
-.page-header nav ul li{
-    display: inline-block;
-    margin-left: 15px;
-}
+@media (max-width: 768px) {
+    .page-header{
+        margin: 0 auto;
+        padding: 30px 15px 30px;
+        border-bottom: 1px solid #ebeaea;
+        text-align: center;
+    }
 
-.page-header h1{
-    width: 200px;
-    margin: 0;
-}
+    /* header */
+    .page-header nav ul{
+        margin: 0;
+        padding: 0;
+    }
 
-.page-header nav{
-    flex: 1;
-    text-align: right;
-}
+    .page-header nav ul li{
+        display: inline-block;
+        margin-left: 15px;
+    }
 
-.page-header .list{
-    margin: 0;
+    .page-header h1{
+    }
+
+    .page-header .list{
+        margin: 0;
+    }
+
+    .page-main {
+      margin: 0 auto;
+      padding: 0 15px;
+    }
 }
 
 /* 列表 */
