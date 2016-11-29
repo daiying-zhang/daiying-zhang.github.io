@@ -40,3 +40,13 @@ description: 前端开发旅途...
     </li>
 {% endfor %}
 </ul>
+{% if paginator.total_pages > 1 %}
+<div class="list-pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="list-pagination-right">&lt; Newer posts</a>
+    {% endif %}
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}">Older posts &gt;</a>
+    {% endif %}
+</div>
+{% endif %}

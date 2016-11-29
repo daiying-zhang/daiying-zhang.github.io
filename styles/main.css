@@ -101,7 +101,7 @@
 }
 .article .article-info a {
   display: block;
-  padding-right: 25px;
+  padding-right: 15px;
   text-decoration: none;
 }
 .article .article-info .post-title{
@@ -177,4 +177,21 @@
     margin-top: 30px;
     border-top: 1px solid #ebeaea;
     padding-top: 20px;
+}
+
+/* 分页 */
+.list-pagination{
+    display: flex;
+    height: 93px;
+    padding: 15px 0;
+}
+.list-pagination a{
+    flex: 1;
+    text-align: center;
+    color: #888181;
+    transition: color 0.2s linear;
+}
+
+.list-pagination a:hover{
+    color: #121111
 }

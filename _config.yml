@@ -1,4 +1,4 @@
-paginate: 10
+paginate: 5
 permalink: posts/:slug
 rdiscount extensions: [smart]
 title: zdying
