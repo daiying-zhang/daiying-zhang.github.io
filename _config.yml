@@ -1,12 +1,10 @@
 paginate: 10
 permalink: posts/:slug
 rdiscount extensions: [smart]
-safe: false
 title: zdying
 
 gems:
   - jekyll-paginate
-  - jekyll-assets
 
 collections:
   tags:
