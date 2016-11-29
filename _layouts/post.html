@@ -21,14 +21,17 @@ layout: default
               {% endunless %}
             </span>
 
-            {% if post.tags.size > 0 %}
             <span class="divider">-</span>
+
             <div class="item article-tags">
-              {% for tag in page.tags %}
-                <a href="{{ 'tag/' | relative_url }}{{ tag }}">{{ tag }}</a>
-              {% endfor %}
+              {% if page.tags.size > 0 %}
+                 {% for tag in page.tags %}
+                    <a href="{{ 'tag/' | relative_url }}{{ tag | replace: ".", "-" }}">{{ tag }}</a>
+                 {% endfor %}
+              {% else %}
+                <a href="{{ 'tag/' | relative_url }}other">OTHER</a>
+              {% endif %}
             </div>
-            {% endif %}
         </div>
     </header>
 
