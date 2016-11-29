@@ -44,6 +44,7 @@ pre {
     font-size: 1em;
 	margin: 0.5em;
     overflow: scroll;
+    tab-size: 4;
 }
 
 a {
@@ -66,11 +67,9 @@ abbr[title] {
 }
 
 blockquote {
-    padding: 0 0 0 15px;
+    padding: 0 0 0 20px;
     margin: 0;
-    font-style: italic;
     line-height: 1.6;
-    color: #ada8a8;
     border-left: 3px solid #615b5b
 }
 
@@ -84,7 +83,8 @@ b,strong {
 
 code,kbd,samp {
     font-family: monospace,monospace;
-    font-size: 1em
+    font-size: 1em;
+    tab-size: 4;
 }
 
 dfn {
