@@ -195,3 +195,15 @@
 .list-pagination a:hover{
     color: #121111
 }
+
+/* image */
+img~em {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+img{
+    margin-top: 20px;
+}
