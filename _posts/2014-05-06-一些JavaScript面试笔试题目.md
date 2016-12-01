@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 一些JavaScript面试笔试题目[收集]
 tags: [javascript]
 ---
