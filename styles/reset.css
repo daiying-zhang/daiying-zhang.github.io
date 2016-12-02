@@ -77,7 +77,8 @@ blockquote {
     padding: 0 0 0 20px;
     margin: 0;
     line-height: 1.6;
-    border-left: 3px solid #615b5b
+    border-left: 3px solid #615b5b;
+    background: whitesmoke;
 }
 
 b,strong {
