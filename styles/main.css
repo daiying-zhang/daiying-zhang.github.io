@@ -106,6 +106,7 @@
 }
 .article .article-info .post-title{
   margin: 0;
+  font-weight: 400;
 }
 .article .article-info p {
   display: block;
